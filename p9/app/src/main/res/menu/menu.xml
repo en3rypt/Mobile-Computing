@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/hideBtn"
+        android:title="Hide" />
+    <item android:title="Increase Font size"  android:id="@+id/increaseBtn"/>
+    <item android:title="Change Text Colour" android:id="@+id/changeBtn" />
+    <item android:title="Play" android:id="@+id/playBtn" />
+    <item android:title="Exit" android:id="@+id/ExitBtn" />
+</menu>

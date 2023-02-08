@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Small"
+        android:id="@+id/small"/>
+    <item android:title="Medium"
+        android:id="@+id/medium"/>
+    <item android:title="large"
+        android:id="@+id/large"/>
+    <item android:title="Change text color"
+        android:id="@+id/changeColor"/>
+</menu>

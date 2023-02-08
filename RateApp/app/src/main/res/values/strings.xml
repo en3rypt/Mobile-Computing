@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">RateApp</string>
+    <string name="ratingbar">ratingBar</string>
+    <string name="we_hope_you_have_enjoyed_your_meal_with_us_today">We hope you have enjoyed your meal with us today</string>
+    <string name="hello">hello</string>
+</resources>

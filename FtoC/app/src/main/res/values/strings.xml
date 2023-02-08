@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FtoC</string>
+    <string name="enter_f">Enter F</string>
+    <string name="convert">Convert</string>
+</resources>
