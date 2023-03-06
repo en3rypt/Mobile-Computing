@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="50sp"
+        android:text="Create Request"
+        android:textColor="#74B1BC"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.068" />
+
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="616dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="vertical"
+        android:paddingHorizontal="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="DATE AND TIME"
+            android:textAlignment="viewStart"
+            android:textAllCaps="true"
+            android:textColor="#74B1BC"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="367dp"
+            android:layout_height="109dp"
+            android:layout_marginTop="10sp"
+            android:background="@drawable/border"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20sp"
+                android:drawableLeft="@drawable/calendar"
+                android:drawablePadding="15sp"
+                android:ems="10"
+                android:hint="Date you need babysitter"
+                android:inputType="date"
+                android:paddingBottom="25sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20sp"
+                android:orientation="horizontal"
+                android:paddingTop="10sp">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="15sp"
+                    android:layout_weight="1"
+                    android:padding="0sp"
+                    app:srcCompat="@drawable/clock" />
+
+                <TextView
+                    android:id="@+id/fromTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:minWidth="120sp"
+                    android:text="From"
+                    android:textColor="#9E9E9E"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/toTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:minWidth="120sp"
+                    android:text="To"
+                    android:textColor="#FF9E9E9E"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50sp"
+            android:fontFamily="sans-serif-medium"
+            android:text="NUMBER OF KIDS"
+            android:textAlignment="viewStart"
+            android:textAllCaps="true"
+            android:textColor="#74B1BC"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/kids"
+            android:layout_width="369dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:orientation="horizontal"
+            android:padding="20sp">
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="false"
+                android:drawableTop="@drawable/radiogroupbtns"
+                android:text="1 Kid"
+                android:textAlignment="center"
+                android:textColor="@color/buttontextcolor" />
+
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="false"
+                android:drawableTop="@drawable/radiogroupbtns"
+                android:text="2 Kids"
+                android:textAlignment="center"
+                android:textColor="@color/buttontextcolor" />
+
+            <RadioButton
+                android:id="@+id/radio3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="false"
+                android:drawableTop="@drawable/radiogroupbtns"
+                android:text="3 Kids"
+                android:textAlignment="center"
+                android:textColor="@color/buttontextcolor" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50sp"
+            android:fontFamily="sans-serif-medium"
+            android:text="CONTACT"
+            android:textAlignment="viewStart"
+            android:textAllCaps="true"
+            android:textColor="#74B1BC"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="368dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:background="@drawable/border"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20sp"
+                android:drawableLeft="@drawable/pin"
+                android:drawablePadding="15sp"
+                android:ems="10"
+                android:hint="Address"
+                android:inputType="date"
+                android:paddingBottom="25sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20sp"
+                android:orientation="horizontal"
+                android:paddingTop="5sp">
+
+                <EditText
+                    android:id="@+id/phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="10sp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/smartphone"
+                    android:drawablePadding="15sp"
+                    android:ems="10"
+                    android:hint="Phone Number"
+                    android:inputType="phone"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submitBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:text="Send Request" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
